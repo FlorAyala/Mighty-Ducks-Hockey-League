@@ -1,0 +1,45 @@
+
+.header{
+    display: flex;
+    justify-content: flex-start; 
+  
+}
+
+.navegador{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 56px;
+    width: 100%;
+}
+h1{
+    text-align:left;
+}
+#logo{
+    width: 100px;
+}
+#imagen-1{
+    width: 130px;
+}
+.li-item{
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: Helvetica, sans-serif;
+    padding: 10px; 
+}
+.contenedor{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 22px;
+    border-right-width: 59px;
+    
+}
+
+
+.columna-2{
+    margin-left: 59px;
+   
+}
+
+.columna11{
+   padding-right: 66px;
+}
