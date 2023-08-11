@@ -1,0 +1,82 @@
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../imagenes/design1_image2.jpg);
+    background-position: left center;
+    height: 452px;
+    overflow: hidden;
+ 
+    margin: 0px;
+}
+
+.navegador{
+    margin-left: 0px;
+    padding-left: 0px;
+    
+   }
+
+h1{
+    text-align:left;
+    font-size: 80px;
+    color:aqua;
+}
+nav{
+    margin-left: 29px;
+    margin-top: 35px;
+}
+.prueba{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    
+}
+#logo{
+    width: 80px;
+
+       
+}
+#imagen-1{
+    width: 130px;
+}
+.contenedor-donde-estoy{
+    background-color: black;
+    width: 100%;
+    height: 64px;
+}
+.donde-estoy{
+   color: white;
+   text-align: center;
+   font-size: 38px; 
+
+   
+}
+.li-item{
+    list-style: none;
+    text-transform: capitalize;
+    font-family: Helvetica, sans-serif;
+    padding: 10px; 
+    padding-bottom: 33px;
+}
+.contenedor{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 22px;
+    border-right-width: 59px;
+    
+}
+
+
+.columna-2{
+    margin-left: 86px;
+    margin-top: 43px;
+   
+}
+
+.columna11{
+   padding-right: 66px;
+
+}
+
