@@ -6,37 +6,53 @@
 header{
     background-image: url(../imagenes/design1_image2.jpg);
     background-position: left center;
-    height: 452px;
+    height: 224px;
     overflow: hidden;
  
     margin: 0px;
 }
+#foto-jugadores{
+   display: none;
+}
 
 .navegador{
+    
+    display: none;
+}
+.navegador-2{
     margin-left: 0px;
     padding-left: 0px;
-    
-   }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
 h1{
     text-align:left;
     font-size: 80px;
-    color:aqua;
+    color:black;
 }
 nav{
     margin-left: 29px;
     margin-top: 35px;
+   
 }
-.prueba{
-    display: flex;
-    justify-content: flex-end;
+
+.div-logo{
     position: absolute;
+    top: 183px;
+    right: 143px;
     
 }
 #logo{
-    width: 80px;
+    width: 166px;
+    background-color: white;
+
 
        
+}
+.div-logo-2{
+    display: none;
 }
 #imagen-1{
     width: 130px;
@@ -60,6 +76,11 @@ nav{
     padding: 10px; 
     padding-bottom: 33px;
 }
+a{
+    text-decoration: none;
+    color: black;
+    
+}
 .contenedor{
     display: flex;
     justify-content: flex-start;
@@ -68,15 +89,10 @@ nav{
     
 }
 
-
 .columna-2{
     margin-left: 86px;
     margin-top: 43px;
    
 }
 
-.columna11{
-   padding-right: 66px;
-
-}
 

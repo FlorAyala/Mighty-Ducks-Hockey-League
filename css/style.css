@@ -1,34 +1,62 @@
-
-.header{
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-image: url(../imagenes/vecteezy_ice-hockey-player-in-action_11923741_680.jpg);
+    
+   background-size: 100%;
+    background-repeat: no-repeat;
+}
+header{
     display: flex;
-    justify-content: flex-start; 
+    align-items: center;
+    background-color: black;
+    height: 130px;
+   
+
+}
+
+.donde-estoy{
+    color: black;
+    text-align: center;
+    font-size: 38px; 
+ 
+}
+
+.nombre{
+    
+    color: white;
+    text-align: center;
+    font-size: 38px; 
+}
+.navegador{
+   
+    display: flex;
+   
+    flex-direction: column;
+    align-items: flex-end;
+
+    
   
 }
 
-.navegador{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 56px;
-    width: 100%;
-}
-h1{
-    text-align:left;
-}
-#logo{
-    width: 100px;
-}
-#imagen-1{
-    width: 130px;
-}
+
 .li-item{
     display: inline-block;
     text-transform: capitalize;
     font-family: Helvetica, sans-serif;
     padding: 10px; 
 }
+a{
+    text-decoration: none;
+    color: black;
+    
+}
 .contenedor{
     display: flex;
-    justify-content: flex-start;
+    justify-content:end;
     margin-right: 22px;
     border-right-width: 59px;
     
@@ -36,10 +64,27 @@ h1{
 
 
 .columna-2{
+    margin-top: 90px;
+    background:rgba(202, 202, 233, 0.45); 
+    border: 1px solid black;
     margin-left: 59px;
-   
+    
 }
 
-.columna11{
-   padding-right: 66px;
+
+#foto-jugadores{
+    display: none;
+}
+.div-logo-2{
+    display: none;
+}
+#logo{
+    display: none;
+}
+#imagen-1{
+    display: none;
+    
+}
+.navegador-2{
+        display: none;
 }
