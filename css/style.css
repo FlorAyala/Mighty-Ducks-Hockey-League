@@ -3,43 +3,51 @@
     padding: 0;
 }
 body{
-    
-    background-image: url(../imagenes/vecteezy_ice-hockey-player-in-action_11923741_680.jpg);
-    
-   background-size: 100%;
-    background-repeat: no-repeat;
+   background-color: rgb(41, 41, 41);
 }
+   
+
 header{
-    display: flex;
-    align-items: center;
-    background-color: black;
-    height: 130px;
+    background-image: url(../imagenes/f9dad37a-f810-4d9e-a854-00dad397070d.jpg);
+    background-position: left center;
+    overflow: hidden;
+    height: 380px;
    
 
 }
 
 .donde-estoy{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 38px; 
  
 }
 
+
+.navegador{
+    
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: black;
+    height: 77px;
+    opacity: 0.8;
+    position: relative;
+    
+    bottom: 77px;
+    
+    
+    
+}
 .nombre{
     
     color: white;
-    text-align: center;
-    font-size: 38px; 
-}
-.navegador{
-   
-    display: flex;
-   
-    flex-direction: column;
-    align-items: flex-end;
-
     
-  
+    font-size: 38px; 
+    position: absolute;
+    top: 321px;
+    left: 29px;
 }
 
 
@@ -47,11 +55,20 @@ header{
     display: inline-block;
     text-transform: capitalize;
     font-family: Helvetica, sans-serif;
-    padding: 10px; 
+    padding: 30px; 
+     letter-spacing: 2px;
+    font-size: 22px;
+    transition: 0.2s;
+}
+.li-item:hover{
+    background:rgb(77, 77, 224);
+    box-shadow: 0 0 10px rgb(77, 77, 224), 0 0 40px rgb(77, 77, 224), 0 0 80px rgb(77, 77, 224);
+    /* transition-delay: 1s; */
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
+   
     
 }
 .contenedor{
@@ -64,27 +81,139 @@ a{
 
 
 .columna-2{
-    margin-top: 90px;
-    background:rgba(202, 202, 233, 0.45); 
-    border: 1px solid black;
-    margin-left: 59px;
+    right: 3px;
+    margin-top: 137px;
+   
+   
+    margin-left: 132px;
+    position: relative;
+    bottom: 141px;
+
     
 }
+#contacto-style-1{
+    position: relative;
+    right: 566px;
+    bottom: 482px;
+}
+#style-about{
+    margin-left: 442px;
+    position: relative;
+    bottom: 505px;
+    left: 11px;
+
+}
+#style-index{
+       position: relative;
+    bottom: 455px;
+    right: 366px;
+
+}
+
+footer{
+    background-color: rgb(29, 28, 28);
+    position: relative;
+    bottom: -6px;
+    text-align: end;
+    height: 72px;
+}
+
+
 
 
 #foto-jugadores{
     display: none;
 }
-.div-logo-2{
-    display: none;
+
+.div-logo{
+    position: absolute;
+    bottom: 435px;
+    left: 50px;
 }
+
 #logo{
-    display: none;
+    width: 213px;
+
 }
 #imagen-1{
     display: none;
     
 }
 .navegador-2{
-        display: none;
+    display: none;
 }
+h3, h4,  p{
+    color: white;
+}
+
+
+.redes-style{
+    width: 20px;
+}
+#prueba-1{
+    width: 342px;
+    position: relative;
+    left: 61px;
+    bottom: 66px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+
+} 
+
+/*STYLE FOTO CON TEXTO*/
+.imag-style-1 {
+
+    width: 30%;
+} 
+
+
+.imag-style-1 figure .capa{
+
+    position: absolute;
+    border-radius: 6px;
+    width: 342px;
+    height: 395px;
+    left: 61px;
+    bottom: -141px;
+   
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.imag-style-1 figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.imag-style-1 figure:hover > .capa  h3{
+    margin-top: 150px;
+    margin-bottom: 15px;
+}
+
+
+.imag-style-1 figure:hover > .capa  h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+      transition: all 500ms ease-out;
+      margin-top: 30px;
+}
+.imag-style-1 figure:hover > .capa  p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+
+}
+
+
+
+/*
+box-shadow: 10px 5px 5px black;
+*/

@@ -7,7 +7,7 @@ header{
    
     background-position: left center;
     overflow: hidden;
-    margin: 0px;
+    margin: 26px;
 }
 #foto-jugadores{
     height: 336px;
@@ -26,6 +26,8 @@ header{
 }
 
 h1{
+    position: relative;
+    bottom: 394px;
     text-align:left;
     font-size: 38px;
     color:black;
@@ -33,15 +35,11 @@ h1{
 
 
 
-
 #logo{
-    display: none;
-      
-}
-#logo-2{
     width: 138px;
     margin-left: 36px;
     margin-top: 68px;
+      
 }
 
 
@@ -84,16 +82,28 @@ a{
 }
 
 .contenedor{
-    display: flex;
-    justify-content: flex-start;
-    margin-right: 22px;
-    border-right-width: 59px;
     
+    position: relative;
+    bottom: 208px;
+    
+}
+.email{
+    color:blue ;
 }
 
 
 .columna-2{
-    margin-left: 179px;
+    margin-left: 263px;
     margin-top: 43px;   
 }
 
+.redes-sociales{
+    display: none;
+}
+#prueba-1{
+    display: none;
+}
+
+footer{
+    display: none;
+}
