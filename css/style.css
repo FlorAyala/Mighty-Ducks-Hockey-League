@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 body{
-   background-color: rgb(41, 41, 41);
+   /* background-color: rgb(41, 41, 41); */
+   background-color: #fff;
 }
    
 
@@ -17,9 +19,11 @@ header{
 }
 
 .donde-estoy{
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 38px; 
+    font-size: 38px;
+    position: relative;
+    top: -62px; 
  
 }
 
@@ -29,7 +33,7 @@ header{
     display: flex;
     
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     background-color: black;
     height: 77px;
     opacity: 0.8;
@@ -40,15 +44,7 @@ header{
     
     
 }
-.nombre{
-    
-    color: white;
-    
-    font-size: 38px; 
-    position: absolute;
-    top: 321px;
-    left: 29px;
-}
+
 
 
 .li-item{
@@ -65,12 +61,14 @@ header{
     box-shadow: 0 0 10px rgb(77, 77, 224), 0 0 40px rgb(77, 77, 224), 0 0 80px rgb(77, 77, 224);
     /* transition-delay: 1s; */
 }
+
 a{
     text-decoration: none;
     color: white;
    
     
 }
+
 .contenedor{
     display: flex;
     justify-content:end;
@@ -143,7 +141,7 @@ footer{
     display: none;
 }
 h3, h4,  p{
-    color: white;
+    color:black;
 }
 
 
@@ -199,8 +197,8 @@ h3, h4,  p{
     color: #fff;
     font-weight: 400;
     margin-bottom: 120px;
-      transition: all 500ms ease-out;
-      margin-top: 30px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
 }
 .imag-style-1 figure:hover > .capa  p{
     color: #fff;
@@ -212,8 +210,140 @@ h3, h4,  p{
 
 }
 
+/*STYLE DE SCROLL IMAGENES*/
+
+.contendedor-foto-desplazables{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly; 
+    position: relative;
+    bottom: 182px;
+}
+.img-1-prueba{
+    position: relative;
+    bottom: 182px;
+}
+
+#img-scroll{
+    
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+
+}
+#img-scroll img{
+    width: 500px;
+    height: 100%;
+    transition: 2s;
+    
+}
+#img-scroll img:hover{
+    transform: translateX(-30%);
+    filter: brightness();
+}
+
+
 
 
 /*
 box-shadow: 10px 5px 5px black;
 */
+
+
+
+/*RULES*/
+
+.encabezado-rules{
+display: flex;
+flex-direction: column;
+align-items: center;
+    
+}
+.texto-rules{
+    margin: 86px;
+    line-height: 1.8;
+    color: black;
+}
+
+
+/*SCHEDULE*/
+
+
+.nombre{
+    
+    color: black;
+    font-size: 38px; 
+    text-align: center;
+   
+}
+.texto-final-schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    
+    margin-top: 63px;
+
+
+}
+.primer-texto{
+    margin: 5px;
+    margin-left: 51px;
+}
+
+.div-tabla{
+    margin: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.div-tabla{
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+th {
+    background-color: black;
+    color: white;
+    font-size: 26px;
+    border-bottom: solid 5px #646464;
+}
+
+tbody {
+    color: black;
+    font-size: 18px;
+}
+
+table, td, tr {
+    border-collapse: collapse;
+}
+
+table {
+    width: 50%;
+    height: 350px;
+    text-align: left;
+    margin: 30px;
+    font-family: 'Quicksand';
+}
+
+tr:hover td {
+    background-color: gray;
+    color: black;
+}
+
+.mapas{
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+.map{
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+}
+
+
