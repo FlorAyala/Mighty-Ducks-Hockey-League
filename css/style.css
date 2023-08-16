@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -263,16 +263,7 @@ footer {
     }
 }
 
-/* #welcome-text{
-    display: flex;
-    text-align: center;
-    justify-content: end;
-    font-size: 25px;
-    color: #fff;
-    position: relative;
-    right: 79px;
-    top: -20px;
-} */
+ 
 
 
 
@@ -286,7 +277,7 @@ footer {
     letter-spacing: 0px;
     background-size: 150%;
     background: linear-gradient(135deg, #fcdf8a, #f38381);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -459,11 +450,7 @@ box-shadow: 10px 5px 5px black;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-
     margin-top: 63px;
-
-
 }
 
 .primer-texto {
@@ -499,9 +486,7 @@ tbody {
     background-size: 100% 100%;
 }
 
-table,
-td,
-tr {
+table, td, tr {
     border-collapse: collapse;
 
 }
@@ -524,7 +509,7 @@ table {
     flex-direction: row;
     justify-content: center;
     position: relative;
-    right: 104px;
+    right: 4px;
 
 }
 
