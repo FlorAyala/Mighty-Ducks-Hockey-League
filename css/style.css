@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(153, 152, 152);
 
 }
 
@@ -396,9 +396,7 @@ footer {
 /*FIN DEL INDEX*/
 
 
-/*
-box-shadow: 10px 5px 5px black;
-*/
+
 
 
 
@@ -428,7 +426,10 @@ box-shadow: 10px 5px 5px black;
     width: 263px;
     transform: rotate(-20deg);
 }
-
+#rules-space-li{
+    position: relative;
+    left: 41px;
+}
 
 /*FIN RULES*/
 
@@ -451,6 +452,8 @@ box-shadow: 10px 5px 5px black;
     flex-direction: column;
     justify-content: flex-end;
     margin-top: 63px;
+    margin-bottom: 60px;
+    margin-left: 43px;
 }
 
 .primer-texto {
@@ -459,35 +462,42 @@ box-shadow: 10px 5px 5px black;
 }
 
 .div-tabla {
-    margin: 100px;
+    margin-top: 42px;
     display: flex;
     flex-direction: column-reverse;
+    
 
 }
 
 .div-tabla {
     width: 100%;
     display: flex;
-    justify-content: center
+    flex-direction: unset;
+    justify-content: space-around;
+    margin-top: 42px;
 }
 
 th {
     background-color: rgb(3, 1, 22);
     color: white;
-    font-size: 26px;
+    font-size: 30px;
     border-bottom: solid 5px 0.5;
+    padding: 13px;
+    
 }
 
 tbody {
-    background-image: url(../imagenes/descarga\ \(3\).jpg);
+    background-image: url(../imagenes/fondo-tabla-3.jpg);
     background-repeat: no-repeat;
-    color: wheat;
+    color:#ff4f4f;
     font-size: 20px;
     background-size: 100% 100%;
+    font-weight:900;
 }
 
 table, td, tr {
     border-collapse: collapse;
+    padding: 14px;
 
 }
 
@@ -495,7 +505,7 @@ table, td, tr {
 table {
     text-align: center;
     width: 59%;
-    height: 400px;
+    height: 453px;
     margin: -3px;
 }
 
@@ -535,6 +545,15 @@ table {
     z-index: 2;
 }
 
+
+#foto-schedule{
+    width: 281px;
+    position: relative;
+    top: 50px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+
+}
 
 
 /*FIN SCHEDULE*/
@@ -610,7 +629,7 @@ table {
     flex-direction: column;
 }
 
-/*OPCION 2*/
+/*imagen con redes sociales y efeccto*/
 .imag-style-1 {
 
     width: 37%;
@@ -704,3 +723,16 @@ margin: 0;
     bottom: 50px;
 } */
 /*FIN CONTACT*/
+
+
+/*INICIO DE FORM*/
+
+.contenedor-form{
+    width: 45%;
+    padding: 15px;
+    margin: 30px;
+
+    background-color: rgba(212, 211, 211, 0.397);
+    
+    
+}
