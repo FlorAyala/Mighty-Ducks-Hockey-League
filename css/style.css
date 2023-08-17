@@ -133,8 +133,7 @@ footer div h3{
 }
 form button{
     background: transparent;
-    border: 2px solid #fff;
-    color: white;
+   
     border-radius: 6px;
     padding: 10px 30px;
     font-size: 15px;
@@ -806,10 +805,7 @@ fieldset {
 
 }
 
-#form-input {
-    position: relative;
-    right: 70px;
-}
+
 
 .text input {
     border: none;

@@ -48,73 +48,74 @@
 
   <div class="contenedor-form">
     <h2>Sign up for the ducks!</h2>
-    <form action="">
+    <form action="./show_data.html" method="get">
 
       <fieldset class="form-nombres">
         <legend>Resgistration Form</legend>
 
-        <label>First Name</label>
-        <input type="text" placeholder="First name" name="" id="">
+        <label for="nomape">First Name</label>
+        <input type="text" placeholder="First name" name="first_name" id="nomape">
 
-        <label class="apellido">Last name</label>
-        <input type="text" placeholder="First name" name="" id="">
+        <label for="nomape" class="apellido">Last name</label>
+        <input type="text" placeholder="First name" name="last_name" id="nomape">
       </fieldset>
 
       <fieldset class="form-calles">
-        <label>Street Address</label>
-        <input type="text" placeholder="ex street/number" name="" id="">
+        <label for="nomape">Street Address</label>
+        <input type="text" placeholder="ex street/number" name="street_address" id="nomape">
+        
       </fieldset>
 
 
       <fieldset class="form-city">
-        <label>City</label>
-        <input type="text" placeholder="City" name="" id="city">
+        <label for="nomape">City</label>
+        <input type="text" placeholder="City" name="city" id="nomape">
 
-        <label class="zip-code">Zip Code</label>
-        <input type="number" placeholder="zip Code" name="" id="">
+        <label for="nomape" class="zip-code">Zip Code</label>
+        <input type="number" placeholder="zip Code" name="zip_number" id="nomape">
       </fieldset>
 
 
       <fieldset class="form-datos-personales">
-        <label>Birthday</label>
-        <input type="date" placeholder="birthday" name="" id="">
+        <label for="nomape">Birthday</label>
+        <input type="date" placeholder="birthday" name="birth_date" id="nomape">
 
-        <label class="parent">Parent/Guardian</label>
-        <input type="number" placeholder="person in charge" name="" id="">
+        <label for="nomape" class="parent">Parent/Guardian</label>
+        <input type="text" placeholder="person in charge" name="parent_guardian" id="nomape">
       </fieldset>
 
 
       <fieldset class="form-genero">
-        <label>Gender</label>
+        <label for="nomape">Gender</label>
 
-        <input type="radio" name="" id="femele">
+        <input type="radio" name="femele" id="nomape" value="femele">
         Female
 
-        <input type="radio" name="" id="male">
+        <input type="radio" name="male" id="nomape" value="male">
         Male
 
       </fieldset>
 
 
       <fieldset class="form-grade">
-        <label>Grade</label>
+        <label for="nomape">Grade</label>
 
-        <input type="radio" name="pre-scholl" id="">
+        <input type="radio" name="pre-scholl" id="nomape" value="pre-scholl">
         Pre-School
 
-        <input type="radio" name="1st" id="">
+        <input type="radio" name="1st" id="nomape" value="1st">
         1st
 
-        <input type="radio" name="2nd" id="">
+        <input type="radio" name="2nd" id="nomape" value="2nd">
         2nd
 
-        <input type="radio" name="3rd" id="">
+        <input type="radio" name="3rd" id="nomape" value="3rd">
         3rd
 
-        <input type="radio" name="4th" id="">
+        <input type="radio" name="4th" id="nomape" value="4th">
         4th
 
-        <input type="radio" name="5th" id="">
+        <input type="radio" name="5th" id="nomape" value="5th">
         5th
 
       </fieldset>
@@ -124,11 +125,11 @@
 
 
         <legend>Which elementary school do you live near?</legend>
-        <label>Closest School</label>
+        <label for="school">Closest School</label>
 
         <br>
-        <select>
-          <option value="0">AJ Katzenmaier</option>
+        <select name="school">
+          <option  value="0">AJ Katzenmaier</option>
           <option value="Greenbay">Greenbay</option>
           <option value="Howard A Yeager">Howard A Yeager</option>
           <option value="Marjorie P Hart">Marjorie P Hart</option>
@@ -140,59 +141,61 @@
 
       <fieldset class="form-position">
         <legend>What position(s) do you normaly play</legend>
+        <label for="position">form position</label>
 
         <p class="position">
           
-          <input type="checkbox" name="" id="">
+          <input type="checkbox" name="goalkeeper" id="position"  value="Goalkeeper">
           Goalkeeper
           <br>
   
-          <input type="checkbox" name="" id="">
+          <input type="checkbox" name="defense" id="position"  value="Defense">
           Defense
         </p>
 
         <p>
 
-          <input type="checkbox" name="" id="">
+          <input type="checkbox" name="midfiels" id="position"  value="Midfiels">
           Midfiels
           <br>
-          <input type="checkbox" name="" id="">
+          <input type="checkbox" name="foward" id="position"  value="Foward">
           Foward
         </p>
 
-
+      
       </fieldset>
 
 
       <fieldset class="form-ropa">
+        <label for="uniform"></label>
         <legend>Uniform Size</legend>
         <p class="ropa-1">
 
-          <input type="radio" name="5th" id="">
+          <input type="radio" name="Youth Small" id="uniform" value="Youth Small">
           Youth Small
           <br>
 
-          <input type="radio" name="5th" id="">
+          <input type="radio" name="Youth Medium" id="uniform" value="Youth Medium">
           Youth Medium
           <br>
-          <input type="radio" name="5th" id="">
+          <input type="radio" name="Large" id="uniform" value="Large">
           Large
           <br>
-          <input type="radio" name="5th" id="">
+          <input type="radio" name="Small" id="uniform" value="Small">
           Small
         </p>
 
         <p>
 
-          <input type="radio" name="5th" id="">
+          <input type="radio" name="Medium" id="uniform" value="Medium">
           Medium
           <br>
 
-          <input type="radio" name="5th" id="">
+          <input type="radio" name="Youth Large" id="uniform" value="Youth Large">
           Youth Large
           <br>
 
-          <input type="radio" name="5th" id="">
+          <input type="radio" name="Extra Large" id="uniform" value="Extra Large">
           Extra Large
         </p>
 
@@ -202,6 +205,7 @@
 
 
       <fieldset class="text">
+        <label for="firma"></label>
         <legend>Permission to Play</legend>
         <p>
 
@@ -217,13 +221,15 @@
           acknowledge that I have read the cancellation policy and agree to its terms.
         </p>
         <br>
-        Parent/GuardianSignature: <input type="text">
+        Parent/GuardianSignature: <input type="text" name="parent_guardian" id="firma">
         <br>
-        Date: <input type="date" name="" id="">
+        Date: <input type="date" name="date" id="firma">
       </fieldset>
-
+      <button type="submit">Send</button>
     </form>
+   
   </div>
+  
   <div class="div-form-img">
     <img id="form-logo" src="imagenes/from.png" alt="">
 
