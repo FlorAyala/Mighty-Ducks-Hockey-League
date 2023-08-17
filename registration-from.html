@@ -49,45 +49,54 @@
     <h2>Sign up for the ducks!</h2>
     <form action="">
 
-      <fieldset>
+      <fieldset class="form-nombres">
         <legend>Resgistration Form</legend>
 
-        <label for="">First Name</label>
+        <label>First Name</label>
         <input type="text" placeholder="First name" name="" id="">
 
-        <label for="">Last name</label>
+        <label class="apellido">Last name</label>
         <input type="text" placeholder="First name" name="" id="">
       </fieldset>
 
-      <fieldset>
-        <label for="">Street Address</label>
+      <fieldset class="form-calles">
+        <label>Street Address</label>
         <input type="text" placeholder="ex street/number" name="" id="">
       </fieldset>
-      <fieldset>
-        <label for="">City</label>
+
+
+      <fieldset class="form-city">
+        <label>City</label>
         <input type="text" placeholder="City" name="" id="city">
 
-        <label for="">Zip Code</label>
+        <label class="zip-code">Zip Code</label>
         <input type="number" placeholder="zip Code" name="" id="">
       </fieldset>
-      <fieldset>
-        <label for="">Birthday</label>
+
+
+      <fieldset class="form-datos-personales">
+        <label>Birthday</label>
         <input type="date" placeholder="birthday" name="" id="">
 
-        <label for="">Parent/Guardian</label>
+        <label class="parent">Parent/Guardian</label>
         <input type="number" placeholder="person in charge" name="" id="">
       </fieldset>
-      <fieldset>
-        <label for="">Gender</label>
 
-        <input type="radio" name="" id="">
+
+      <fieldset class="form-genero">
+        <label>Gender</label>
+
+        <input type="radio" name="" id="femele">
         Female
 
-        <input type="radio" name="" id="">
+        <input type="radio" name="" id="male">
         Male
+
       </fieldset>
-      <fieldset>
-        <label for="">Grade</label>
+
+
+      <fieldset class="form-grade">
+        <label>Grade</label>
 
         <input type="radio" name="pre-scholl" id="">
         Pre-School
@@ -108,9 +117,13 @@
         5th
 
       </fieldset>
-      <fieldset>
+
+
+      <fieldset class="form-school">
+
+
         <legend>Which elementary school do you live near?</legend>
-        <label for="">Closest School</label>
+        <label>Closest School</label>
 
         <br>
         <select>
@@ -122,44 +135,64 @@
           <option value="South Elementary">South Elementary</option>
         </select>
       </fieldset>
-      <fieldset>
+
+
+      <fieldset class="form-position">
         <legend>What position(s) do you normaly play</legend>
+
+
         <input type="checkbox" name="" id="">
         Goalkeeper
+        <br>
 
         <input type="checkbox" name="" id="">
         Defense
 
+
+
         <input type="checkbox" name="" id="">
         Midfiels
-
+        <br>
         <input type="checkbox" name="" id="">
         Foward
+
       </fieldset>
-      <fieldset>
+
+
+      <fieldset class="form-ropa">
         <legend>Uniform Size</legend>
-        <input type="radio" name="5th" id="">
-        Youth Small
+        <p> <input type="radio" name="5th" id="">
+          Youth Small
+          <br>
+          <input type="radio" name="5th" id="">
+          Youth Medium
 
-        <input type="radio" name="5th" id="">
-        Youth Medium
 
-        <input type="radio" name="5th" id="">
-        Large
+        </p>
+        <p>
+          <input type="radio" name="5th" id="">
+          Large
+          <input type="radio" name="5th" id="">
+          Small
+        </p>
+        <p>
 
-        <input type="radio" name="5th" id="">
-        Small
+          <input type="radio" name="5th" id="">
+          Medium
 
-        <input type="radio" name="5th" id="">
-        Medium
+          <input type="radio" name="5th" id="">
+          Youth Large
 
-        <input type="radio" name="5th" id="">
-        Youth Large
-
+        </p>
         <input type="radio" name="5th" id="">
         Extra Large
+
+
+
       </fieldset>
-      <fieldset>
+
+
+      <fieldset class="text">
         <legend>Permission to Play</legend>
         <p>
 
@@ -174,13 +207,17 @@
           By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso
           acknowledge that I have read the cancellation policy and agree to its terms.
         </p>
-        
+        <br>
         Parent/GuardianSignature: <input type="text">
         <br>
         Date: <input type="date" name="" id="">
       </fieldset>
 
     </form>
+  </div>
+  <div class="div-form-img">
+    <img id="form-logo" src="imagenes/from.png" alt="">
+    
   </div>
 
 

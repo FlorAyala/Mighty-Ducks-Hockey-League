@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -263,7 +263,7 @@ footer {
     }
 }
 
- 
+
 
 
 
@@ -426,7 +426,8 @@ footer {
     width: 263px;
     transform: rotate(-20deg);
 }
-#rules-space-li{
+
+#rules-space-li {
     position: relative;
     left: 41px;
 }
@@ -465,7 +466,7 @@ footer {
     margin-top: 42px;
     display: flex;
     flex-direction: column-reverse;
-    
+
 
 }
 
@@ -483,19 +484,22 @@ th {
     font-size: 30px;
     border-bottom: solid 5px 0.5;
     padding: 13px;
-    
+
 }
 
 tbody {
-    background-image: url(../imagenes/fondo-tabla-3.jpg);
-    background-repeat: no-repeat;
-    color:#ff4f4f;
+    /* background-image: url(../imagenes/fondo-tabla-3.jpg); */
+    /* background-repeat: no-repeat; */
+    background-color: white;
+    color: black;
     font-size: 20px;
     background-size: 100% 100%;
-    font-weight:900;
+    font-weight: 900;
 }
 
-table, td, tr {
+table,
+td,
+tr {
     border-collapse: collapse;
     padding: 14px;
 
@@ -546,7 +550,7 @@ table {
 }
 
 
-#foto-schedule{
+#foto-schedule {
     width: 281px;
     position: relative;
     top: 50px;
@@ -646,11 +650,12 @@ table {
     bottom: -181px;
     width: 213%;
 }
-.card img{
+
+.card img {
     height: 450px;
     width: 400px;
     border-radius: 6px;
-    
+
 }
 
 
@@ -727,12 +732,73 @@ margin: 0;
 
 /*INICIO DE FORM*/
 
-.contenedor-form{
-    width: 45%;
+.contenedor-form {
+    width: 65%;
     padding: 15px;
     margin: 30px;
 
-    background-color: rgba(212, 211, 211, 0.397);
-    
-    
+    background-color: white;
+    position: relative;
+    left: 200px;
+}
+
+fieldset {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 5px;
+
+}
+
+#form-input {
+    position: relative;
+    right: 70px;
+}
+
+.text input {
+    border: none;
+    border-bottom: 1px solid #584B4F;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
+.apellido {
+    padding-left: 80px;
+}
+
+.form-calles input {
+    width: 50%;
+}
+
+.zip-code {
+    padding-left: 71px;
+}
+
+#city {
+    width: 27%;
+}
+
+.parent {
+    padding-left: 78px;
+}
+
+.form-genero input {}
+
+
+.position-2 {
+    position: relative;
+    left: 20px;
+}
+
+#form-logo{
+    width: 267px;
+}
+.div-form-img{
+    position: relative;
+    bottom: 1142px;
+    left: 937px;
 }
