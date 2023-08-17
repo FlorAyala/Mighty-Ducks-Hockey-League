@@ -91,12 +91,59 @@ a {
 
 /*FOOTER*/
 
-footer {
-    background-color: rgb(29, 28, 28);
-    position: relative;
-    bottom: -6px;
-    text-align: end;
-    height: 72px;
+ 
+footer{
+    background: #333;;
+    color: white;
+    text-transform: uppercase;
+    padding: 41px 15%;
+    width: 70%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5em;
+    display: flex;
+
+}
+footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+.form-footer input{
+    width: 400px;
+    height: 45px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.ul-footer i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 
@@ -490,13 +537,16 @@ th {
 tbody {
     /* background-image: url(../imagenes/fondo-tabla-3.jpg); */
     /* background-repeat: no-repeat; */
-    background-color: white;
+    background-color: rgb(75, 100, 245);
     color: black;
     font-size: 20px;
     background-size: 100% 100%;
     font-weight: 900;
+    
 }
-
+table{
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); 
+}
 table,
 td,
 tr {
@@ -626,6 +676,8 @@ table {
 #img-contact {
     margin: 50px;
     width: 300px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px black;
 }
 
 .cont-colum-contact {
@@ -743,6 +795,7 @@ margin: 0;
     background-color: white;
     position: relative;
     left: 200px;
+    cursor: pointer;
     
 }
 
