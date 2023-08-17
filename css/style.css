@@ -730,6 +730,9 @@ margin: 0;
 /*FIN CONTACT*/
 
 
+
+
+
 /*INICIO DE FORM*/
 
 .contenedor-form {
@@ -740,6 +743,7 @@ margin: 0;
     background-color: white;
     position: relative;
     left: 200px;
+    
 }
 
 fieldset {
@@ -786,13 +790,13 @@ legend {
     padding-left: 78px;
 }
 
-.form-genero input {}
-
-
-.position-2 {
-    position: relative;
-    left: 20px;
+.form-genero label{
+    margin-right: 71px;
 }
+.form-grade label{
+    margin-right: 82px;
+}
+
 
 #form-logo{
     width: 267px;
@@ -802,3 +806,13 @@ legend {
     bottom: 1142px;
     left: 937px;
 }
+.form-position, .form-ropa{
+   
+    display: flex;
+    flex-direction: row;      
+ 
+}
+.position, .ropa-1{
+    padding-right: 50px;
+}
+
