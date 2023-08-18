@@ -122,6 +122,7 @@ footer div h3{
     margin-bottom: 10px;
 }
 .form-footer input{
+    text-decoration: none;
     width: 400px;
     height: 45px;
     border-radius: 6px;
@@ -131,19 +132,31 @@ footer div h3{
     outline: none;
     border: none;
 }
+.form-footer button{
+    color: #fff;
+}
 form button{
     background: transparent;
-   
+
     border-radius: 6px;
     padding: 10px 30px;
     font-size: 15px;
     cursor: pointer;
 }
+
 .ul-footer i{
     font-size: 22px;
     margin: 10px;
     cursor: pointer;
 }
+.ul-footer{
+    list-style: none;
+}
+.col-3 ul{
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
