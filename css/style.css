@@ -618,8 +618,8 @@ table {
 
 
 .contenedor {
-    display: flex;
-    justify-content: end;
+    
+
     margin-right: 22px;
     border-right-width: 59px;
     font-family: 'Poppins', sans-serif;
@@ -627,19 +627,23 @@ table {
 }
 
 .imag-style-about {
-    width: 31%;
+    width: 183%;
     margin-left: 23px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
 }
 
 #style-about {
-    margin-left: 496px;
-    position: relative;
-    bottom: 505px;
-    left: 11px;
+    display: flex;
+    flex-direction: row;
+
 
 }
-
+.cont-tex-about{
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 82px;
+    padding-left: 241px;
+}
 
 /*FIN ABOUT US*/
 
@@ -820,7 +824,7 @@ legend {
 
 
 .apellido {
-    padding-left: 80px;
+    padding-left: 48px;
 }
 
 .form-calles input {
@@ -828,7 +832,7 @@ legend {
 }
 
 .zip-code {
-    padding-left: 71px;
+    padding-left: 112px;
 }
 
 #city {
@@ -836,7 +840,7 @@ legend {
 }
 
 .parent {
-    padding-left: 78px;
+    padding-left: 45px;
 }
 
 .form-genero label{
