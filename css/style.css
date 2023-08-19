@@ -111,7 +111,7 @@ footer div {
 }
 
 .col-2 {
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 footer div h3 {
@@ -898,6 +898,9 @@ legend {
 }
 
 @media screen and (max-width: 768px) {
+    main {
+        height: 80%;
+    }
 
     /*INDEX*/
     header {
@@ -965,7 +968,8 @@ legend {
         /* font-size: 25px;
         left: 374px; */
     }
-    .donde-estoy{
+
+    .donde-estoy {
         top: -11px;
     }
 
@@ -1003,8 +1007,9 @@ legend {
     /*FOOTER*/
 
     footer {
-        padding: 24px 15%;
-        
+        padding: 26px 19px;
+        width: 95%;
+
     }
 
     .form-footer input {
@@ -1036,12 +1041,25 @@ legend {
 
 
     /*CONTACT*/
+    #img-contact {
+        width: 213px;
+
+    }
+
+    .card {
+        height: 373px;
+        margin: 10px;
+        left: 47px;
+        bottom: -184px;
+        width: 206%;
+    }
 
     /*FORM*/
     .contenedor-form {
-        margin-left: 91px;
+        margin-left: -25px;
         width: 77%;
-        position: initial;
+        position: relative;
+        left: 130px;
     }
 
     .div-form-img {
@@ -1051,9 +1069,17 @@ legend {
 
     }
 
-    #form-logo {
-      display: none;
+    table,
+    td,
+    tr {
+
+        padding: 7px;
     }
+
+    #form-logo {
+        display: none;
+    }
+
 
 
     /*RULES*/
@@ -1084,11 +1110,35 @@ legend {
         width: 89%;
     }
 
+    .foto-deco {
+        display: flex;
+        justify-content: center;
+        width: 66%;
+        height: 143px;
+
+        margin-bottom: 84px;
+        margin-left: 68px;
+    }
+
     .mapas {
+        flex-wrap: wrap;
+
+
+    }
+
+    .box {
+        display: flex;
         flex-direction: column;
-        position: relative;
-        bottom: 573px;
-        left: 430px;
+        align-items: center;
+    }
+
+
+    #foto-schedule {
+        /* display: none; */
+        object-fit: cover;
+        max-width: 100%;
+        height: 241px;
+
     }
 
 }
