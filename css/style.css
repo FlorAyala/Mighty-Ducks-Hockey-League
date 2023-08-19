@@ -91,9 +91,10 @@ a {
 
 /*FOOTER*/
 
- 
-footer{
-    background: #333;;
+
+footer {
+    background: #333;
+    ;
     color: white;
     text-transform: uppercase;
     padding: 41px 15%;
@@ -104,24 +105,29 @@ footer{
     display: flex;
 
 }
-footer div{
+
+footer div {
     text-align: center;
 }
-.col-2{
+
+.col-2 {
     flex-grow: 2;
 }
-footer div h3{
+
+footer div h3 {
     font-weight: 300;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
-.col-1 a{
+
+.col-1 a {
     display: block;
     text-decoration: none;
     color: white;
     margin-bottom: 10px;
 }
-.form-footer input{
+
+.form-footer input {
     text-decoration: none;
     width: 400px;
     height: 45px;
@@ -132,10 +138,12 @@ footer div h3{
     outline: none;
     border: none;
 }
-.form-footer button{
+
+.form-footer button {
     color: #fff;
 }
-form button{
+
+form button {
     background: transparent;
 
     border-radius: 6px;
@@ -144,15 +152,17 @@ form button{
     cursor: pointer;
 }
 
-.ul-footer i{
+.ul-footer i {
     font-size: 22px;
     margin: 10px;
     cursor: pointer;
 }
-.ul-footer{
+
+.ul-footer {
     list-style: none;
 }
-.col-3 ul{
+
+.col-3 ul {
     display: flex;
     flex-direction: row;
 }
@@ -206,6 +216,10 @@ form button{
 
 }
 
+.btn-nav,
+.btn-cerrar-nav {
+    display: none;
+}
 
 
 
@@ -521,13 +535,6 @@ form button{
     margin-left: 51px;
 }
 
-.div-tabla {
-    margin-top: 42px;
-    display: flex;
-    flex-direction: column-reverse;
-
-
-}
 
 .div-tabla {
     width: 100%;
@@ -552,13 +559,14 @@ tbody {
     background-color: rgb(75, 100, 245);
     color: black;
     font-size: 20px;
-    background-size: 100% 100%;
     font-weight: 900;
-    
+
 }
-table{
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); 
+
+table {
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
+
 table,
 td,
 tr {
@@ -571,7 +579,6 @@ tr {
 table {
     text-align: center;
     width: 59%;
-    height: 453px;
     margin: -3px;
 }
 
@@ -588,6 +595,7 @@ table {
     right: 4px;
 
 }
+
 
 .map {
     display: block;
@@ -631,7 +639,7 @@ table {
 
 
 .contenedor {
-    
+
 
     margin-right: 22px;
     border-right-width: 59px;
@@ -651,9 +659,10 @@ table {
 
 
 }
-.cont-tex-about{
+
+.cont-tex-about {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     margin-bottom: 82px;
     padding-left: 241px;
 }
@@ -812,7 +821,7 @@ margin: 0;
     position: relative;
     left: 200px;
     cursor: pointer;
-    
+
 }
 
 fieldset {
@@ -856,29 +865,233 @@ legend {
     padding-left: 45px;
 }
 
-.form-genero label{
+.form-genero label {
     margin-right: 71px;
 }
-.form-grade label{
+
+.form-grade label {
     margin-right: 82px;
 }
 
 
-#form-logo{
+#form-logo {
     width: 267px;
 }
-.div-form-img{
+
+.div-form-img {
     position: relative;
     bottom: 1142px;
     left: 937px;
 }
-.form-position, .form-ropa{
-   
+
+.form-position,
+.form-ropa {
+
     display: flex;
-    flex-direction: row;      
- 
+    flex-direction: row;
+
 }
-.position, .ropa-1{
+
+.position,
+.ropa-1 {
     padding-right: 50px;
 }
 
+@media screen and (max-width: 768px) {
+
+    /*INDEX*/
+    header {
+        background-position: center;
+        height: 264px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .btn-cerrar-nav,
+    .btn-nav {
+        display: block;
+        border: 0;
+        font-size: 1.2rem;
+        background-color: transparent;
+        cursor: pointer;
+
+
+    }
+
+    .btn-nav {
+        position: relative;
+        top: -31px;
+        left: 18px;
+    }
+
+
+
+    .navegador {
+
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        width: 202px;
+        height: 128%;
+        z-index: 2;
+    }
+
+    .navegador.visible {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-7 h1::after {
+        display: none;
+        /* font-size: 25px;
+        left: 374px; */
+    }
+    .donde-estoy{
+        top: -11px;
+    }
+
+    .contenedor-index {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .contenedor-carrusel {
+        width: 41%;
+        top: 9px;
+
+    }
+
+    .text-home {
+        left: 20px;
+        bottom: -2px;
+        font-size: 12px;
+    }
+
+    .contendedor-foto-desplazables {
+        width: 52%;
+        height: 173px;
+        bottom: -30px;
+        padding-left: 186px;
+    }
+
+    #img-scroll {
+        width: 175px;
+        height: 95px;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        padding: 24px 15%;
+        
+    }
+
+    .form-footer input {
+        width: 223px;
+        height: 39px;
+        margin-bottom: 25px;
+    }
+
+    .form-footer button {
+        font-size: 10px;
+    }
+
+    .ul-footer i {
+        font-size: 17px;
+    }
+
+    footer div h3 {
+        margin-bottom: 15px;
+        letter-spacing: 3px;
+    }
+
+    /*ABOUT*/
+
+    .cont-tex-about {
+        padding-left: 144px;
+        font-size: 14px;
+        margin-right: 27px;
+    }
+
+
+    /*CONTACT*/
+
+    /*FORM*/
+    .contenedor-form {
+        margin-left: 91px;
+        width: 77%;
+        position: initial;
+    }
+
+    .div-form-img {
+        position: absolute;
+        bottom: 94px;
+        left: 614px;
+
+    }
+
+    #form-logo {
+      display: none;
+    }
+
+
+    /*RULES*/
+
+    #rules {
+        width: 148px;
+    }
+
+    .img-rules {
+        left: 25px;
+    }
+
+
+    /*SCHEDULE*/
+
+    .primer-texto {
+        margin: 24px;
+
+    }
+
+    .div-tabla {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 47px;
+    }
+
+    table {
+        width: 89%;
+    }
+
+    .mapas {
+        flex-direction: column;
+        position: relative;
+        bottom: 573px;
+        left: 430px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {}

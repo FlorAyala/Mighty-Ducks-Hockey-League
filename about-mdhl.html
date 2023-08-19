@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e337b11929.js" crossorigin="anonymous"></script>
+  
 
 
   <title>Mighty Ducks Hockey League</title>
@@ -20,20 +21,24 @@
   <header>
   </header>
 
-  <!--NAVEGADOR -->
-  <nav class="navegador">
 
-    <ul>
-      <li class="li-item"><a href="index.html">Home</a></li>
-      <li class="li-item"><a href="about-mdhl.html">About MDHL</a></li>
-      <li class="li-item"><a href="contact.html">Contact</a></li>
-      <li class="li-item"><a href="registration-from.html"> Registration form </a></li>
-      <li class="li-item"><a href="rules.html">Rules</a></li>
-      <li class="li-item"><a href="schedule.html">Schedule</a> </li>
-    </ul>
+ <!--NAVEGADOR -->
+ <button id="abrir" class="btn-nav"><i class="fas fa-bars fa-lg" style="color: #0d0d0d;"></i> </button>
+  
 
-  </nav>
-
+ <nav class="navegador" id="nav">
+   
+   <button id="cerrar" class="btn-cerrar-nav"><i class="fas fa-times" style="color: #ffffff;"></i></button>
+   <ul class="nav-list">
+     <li class="li-item"><a href="index.html">Home</a></li>
+     <li class="li-item"><a href="about-mdhl.html">About MDHL</a></li>
+     <li class="li-item"><a href="contact.html">Contact</a></li>
+     <li class="li-item"><a href="registration-from.html"> Registration form </a></li>
+     <li class="li-item"><a href="rules.html">Rules</a></li>
+     <li class="li-item"><a href="schedule.html">Schedule</a> </li>
+   </ul>
+   
+ </nav>
   <!-- LOGO -->
   <div class="div-logo">
     <img id="logo" src="./imagenes/Logo-Mighty-ducks-02.png" alt="Logo de Mighty Ducks Hockey League">
@@ -116,6 +121,7 @@
         
     </div>
 </footer>
+<script src="./js/main.js"></script>
 </body>
 
 </html>

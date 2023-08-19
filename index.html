@@ -17,12 +17,17 @@
 <body>
 
   <header>
+
   </header>
 
   <!--NAVEGADOR -->
-  <nav class="navegador">
+  <button id="abrir" class="btn-nav"><i class="fas fa-bars fa-lg" style="color: #0d0d0d;"></i> </button>
 
-    <ul>
+
+  <nav class="navegador" id="nav">
+
+    <button id="cerrar" class="btn-cerrar-nav"><i class="fas fa-times" style="color: #ffffff;"></i></button>
+    <ul class="nav-list">
       <li class="li-item"><a href="index.html">Home</a></li>
       <li class="li-item"><a href="about-mdhl.html">About MDHL</a></li>
       <li class="li-item"><a href="contact.html">Contact</a></li>
@@ -37,52 +42,56 @@
     <img id="logo" src="./imagenes/Logo-Mighty-ducks-02.png" alt="Logo de Mighty Ducks Hockey League">
   </div>
 
-      <!-- WELCOME -->
+  <!-- WELCOME -->
   <div class="bg-7" id="welcome-text">
     <h1 class="t-stroke"> </h1>
   </div>
 
-<!-- CARRUSEL DE FOTO -->
-  <div class="contenedor-carrusel">
+  <!-- CARRUSEL DE FOTO -->
+
+  <div class="contenedor-index">
+
+    <div class="contenedor-carrusel">
 
 
-    <div class="slider">
-      <ul>
-        <li><img src="./imagenes/scroll-1.jpg" alt="index"></li>
-        <li><img src="./imagenes/scroll-2.jpg" alt="index2"></li>
-        <li><img src="./imagenes/scroll-3.jpg" alt="index3"></li>
-        <li><img src="./imagenes/scroll-4.jpg" alt="index4"></li>
-      </ul>
+      <div class="slider">
+        <ul>
+          <li><img src="./imagenes/scroll-1.jpg" alt="index"></li>
+          <li><img src="./imagenes/scroll-2.jpg" alt="index2"></li>
+          <li><img src="./imagenes/scroll-3.jpg" alt="index3"></li>
+          <li><img src="./imagenes/scroll-4.jpg" alt="index4"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TEXTO DEL HOME -->
+    <div class="text-home">
+
+      <h2>Upcoming Events</h2>
+      <div>
+        <h4>August 4</h4>
+        <p>MDSL Fundraiser</p>
+      </div>
+      <div>
+        <h4>August 16</h4>
+        <p>Season Kick-off: Meet the Teams</p>
+      </div>
+      <div>
+        <h4>September 1</h4>
+        <p>First Game of the Season (Check Game Schedule for details)</p>
+      </div>
+
+
     </div>
   </div>
 
 
 
 
-  <!-- TEXTO DEL HOME -->
-  <div class="text-home">
-
-    <h2>Upcoming Events</h2>
-    <div>
-      <h4>August 4</h4>
-      <p>MDSL Fundraiser</p>
-    </div>
-    <div>
-      <h4>August 16</h4>
-      <p>Season Kick-off: Meet the Teams</p>
-    </div>
-    <div>
-      <h4>September 1</h4>
-      <p>First Game of the Season (Check Game Schedule for details)</p>
-    </div>
-
-
-  </div>
 
 
 
-
-<!-- TRES FOTOS DESPLAZANBLES -->
+  <!-- TRES FOTOS DESPLAZANBLES -->
   <div class="contendedor-foto-desplazables">
 
 
@@ -104,33 +113,34 @@
 
   <footer>
     <div class="col-1">
-        
-        <a href="index.html">Home</a>
-        <a href="about-mdhl.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Resgistration Form</a>
-        <a href="rules.html">Rules</a>
-        <a href="schedule.html">Schedule</a>
+
+      <a href="index.html">Home</a>
+      <a href="about-mdhl.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Resgistration Form</a>
+      <a href="rules.html">Rules</a>
+      <a href="schedule.html">Schedule</a>
     </div>
     <div class="col-2">
-        <h3>newsketter</h3>
-        <form class="form-footer">
-            <input type="text" placeholder="Your email address" required>
-            <br>
-            <button type="submit">Suscribe now</button>
-        </form>
+      <h3>newsketter</h3>
+      <form class="form-footer">
+        <input type="text" placeholder="Your email address" required>
+        <br>
+        <button type="submit">Suscribe now</button>
+      </form>
     </div>
     <div class="col-3">
-        <h3>Social networks </h3>
-        <ul class="ul-footer">
-           <li><i class="fa-brands fa-facebook fa-beat-fade fa-xl"></i>             
-           <li> <i class="fa-brands fa-twitter fa-beat-fade fa-xl"></i></li> 
-            <li><i class="fa-brands fa-instagram fa-beat-fade fa-xl"></i></li>       
-         </ul>
+      <h3>Social networks </h3>
+      <ul class="ul-footer">
+        <li><i class="fa-brands fa-facebook fa-beat-fade fa-xl"></i>
+        <li> <i class="fa-brands fa-twitter fa-beat-fade fa-xl"></i></li>
+        <li><i class="fa-brands fa-instagram fa-beat-fade fa-xl"></i></li>
+      </ul>
 
-        
+
     </div>
-</footer>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
