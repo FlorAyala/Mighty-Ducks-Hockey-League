@@ -17,25 +17,28 @@
 <body>
 
   <header>
+    <!-- LOGO -->
+    <div class="div-logo">
+      <img id="logo" src="./imagenes/Logo-Mighty-ducks-02.png" alt="Logo de Mighty Ducks Hockey League">
+    </div>
+
+    <button id="abrir" class="btn-nav"><i class="fas fa-bars fa-lg" style="color: #0d0d0d;"></i> </button>
+  
+  
+    <nav class="navegador" id="nav">
+  
+      <button id="cerrar" class="btn-cerrar-nav"><i class="fas fa-times" style="color: #ffffff;"></i></button>
+      <ul class="nav-list">
+        <li class="li-item"><a href="index.html">Home</a></li>
+        <li class="li-item"><a href="about-mdhl.html">About MDHL</a></li>
+        <li class="li-item"><a href="contact.html">Contact</a></li>
+        <li class="li-item"><a href="registration-from.html"> Registration form </a></li>
+        <li class="li-item"><a href="rules.html">Rules</a></li>
+        <li class="li-item"><a href="schedule.html">Schedule</a> </li>
+      </ul>
+  
+    </nav>
   </header>
-
-  <!--NAVEGADOR -->
-  <button id="abrir" class="btn-nav"><i class="fas fa-bars fa-lg" style="color: #0d0d0d;"></i> </button>
-
-
-  <nav class="navegador" id="nav">
-
-    <button id="cerrar" class="btn-cerrar-nav"><i class="fas fa-times" style="color: #ffffff;"></i></button>
-    <ul class="nav-list">
-      <li class="li-item"><a href="index.html">Home</a></li>
-      <li class="li-item"><a href="about-mdhl.html">About MDHL</a></li>
-      <li class="li-item"><a href="contact.html">Contact</a></li>
-      <li class="li-item"><a href="registration-from.html"> Registration form </a></li>
-      <li class="li-item"><a href="rules.html">Rules</a></li>
-      <li class="li-item"><a href="schedule.html">Schedule</a> </li>
-    </ul>
-
-  </nav>
 
   <main>
 
@@ -43,83 +46,81 @@
       <p class="donde-estoy">Registration from</p>
     </div>
 
-    <!-- LOGO -->
-    <div class="div-logo">
-      <img id="logo" src="./imagenes/Logo-Mighty-ducks-02.png" alt="Logo de Mighty Ducks Hockey League">
-    </div>
+    
 
 
 
     <div class="contenedor-form">
+    
       <h2>Sign up for the ducks!</h2>
       <form action="./show_data.html" method="get">
 
         <fieldset class="form-nombres">
           <legend>Resgistration Form</legend>
 
-          <label for="nomape">First Name</label>
-          <input type="text" placeholder="First name" name="first_name" id="nomape">
+          <label for="datos-personales">First Name</label>
+          <input type="text" placeholder="First name" name="first_name" id="datos-personales">
 
-          <label for="nomape" class="apellido">Last name</label>
-          <input type="text" placeholder="First name" name="last_name" id="nomape">
+          <label for="datos-personales" class="apellido">Last name</label>
+          <input type="text" placeholder="First name" name="last_name" id="apellido">
         </fieldset>
 
         <fieldset class="form-calles">
-          <label for="nomape">Street Address</label>
-          <input type="text" placeholder="ex street/number" name="street_address" id="nomape">
+          <label for="datos-personales">Street Address</label>
+          <input type="text" placeholder="ex street/number" name="street_address" id="calles">
 
         </fieldset>
 
 
         <fieldset class="form-city">
-          <label for="nomape">City</label>
-          <input type="text" placeholder="City" name="city" id="nomape">
+          <label for="datos-personales">City</label>
+          <input type="text" placeholder="City" name="city" id="ciudad">
 
-          <label for="nomape" class="zip-code">Zip Code</label>
-          <input type="number" placeholder="zip Code" name="zip_number" id="nomape">
+          <label for="datos-personales" class="zip-code">Zip Code</label>
+          <input type="number" placeholder="zip Code" name="zip_number" id="codigo-postal">
         </fieldset>
 
 
         <fieldset class="form-datos-personales">
-          <label for="nomape">Birthday</label>
-          <input type="date" name="birth_date" id="nomape">
+          <label for="datos-personales">Birthday</label>
+          <input type="date" name="birth_date" id="año-nacimiento">
 
-          <label for="nomape" class="parent">Parent/Guardian</label>
-          <input type="text" placeholder="person in charge" name="parent_guardian" id="nomape">
+          <label for="datos-personales" class="parent">Parent/Guardian</label>
+          <input type="text" placeholder="person in charge" name="parent_guardian" id="padres">
         </fieldset>
 
 
         <fieldset class="form-genero">
-          <label for="nomape">Gender</label>
+          <label for="datos-personales">Gender</label>
 
-          <input type="radio" name="femele" id="nomape" value="femele">
+          <input type="radio" name="femele" id="femenino" value="femele">
           Female
 
-          <input type="radio" name="male" id="nomape" value="male">
+          <input type="radio" name="male" id="masculino" value="male">
           Male
 
         </fieldset>
 
 
         <fieldset class="form-grade">
-          <label for="nomape">Grade</label>
+          <label for="datos-personales">Grade</label>
 
-          <input type="radio" name="pre-scholl" id="nomape" value="pre-scholl">
+          <input type="radio" name="pre-scholl" id="grado" value="pre-scholl">
           Pre-School
 
-          <input type="radio" name="1st" id="nomape" value="1st">
+          <input type="radio" name="1st" id="primero" value="1st">
           1st
 
-          <input type="radio" name="2nd" id="nomape" value="2nd">
+          <input type="radio" name="2nd" id="segundo" value="2nd">
           2nd
 
-          <input type="radio" name="3rd" id="nomape" value="3rd">
+          <input type="radio" name="3rd" id="tercero" value="3rd">
           3rd
 
-          <input type="radio" name="4th" id="nomape" value="4th">
+          <input type="radio" name="4th" id="cuarto" value="4th">
           4th
 
-          <input type="radio" name="5th" id="nomape" value="5th">
+          <input type="radio" name="5th" id="quinto" value="5th">
           5th
 
         </fieldset>
@@ -143,22 +144,22 @@
           <legend>What position(s) do you normaly play</legend>
           <label for="position"></label>
 
-          <p class="position">
+          <p class="position-1">
 
             <input type="checkbox" name="goalkeeper" id="position" value="Goalkeeper">
             Goalkeeper
             <br>
 
-            <input type="checkbox" name="defense" id="position" value="Defense">
+            <input type="checkbox" name="defense" id="Defense" value="Defense">
             Defense
           </p>
 
           <p>
 
-            <input type="checkbox" name="midfiels" id="position" value="Midfiels">
+            <input type="checkbox" name="midfiels" id="Midfiels" value="Midfiels">
             Midfiels
             <br>
-            <input type="checkbox" name="foward" id="position" value="Foward">
+            <input type="checkbox" name="foward" id="Foward" value="Foward">
             Foward
           </p>
 
@@ -175,27 +176,27 @@
             Youth Small
             <br>
 
-            <input type="radio" name="Youth Medium" id="uniform" value="Youth Medium">
+            <input type="radio" name="Youth Medium" id="Youth-Medium" value="Youth Medium">
             Youth Medium
             <br>
-            <input type="radio" name="Large" id="uniform" value="Large">
+            <input type="radio" name="Large" id="Large" value="Large">
             Large
             <br>
-            <input type="radio" name="Small" id="uniform" value="Small">
+            <input type="radio" name="Small" id="small" value="Small">
             Small
           </p>
 
           <p>
 
-            <input type="radio" name="Medium" id="uniform" value="Medium">
+            <input type="radio" name="Medium" id="Medium" value="Medium">
             Medium
             <br>
 
-            <input type="radio" name="Youth Large" id="uniform" value="Youth Large">
+            <input type="radio" name="Youth Large" id="Youth-large" value="Youth Large">
             Youth Large
             <br>
 
-            <input type="radio" name="Extra Large" id="uniform" value="Extra Large">
+            <input type="radio" name="Extra Large" id="extra-Large" value="Extra Large">
             Extra Large
           </p>
 
@@ -223,17 +224,14 @@
           <br>
           Parent/GuardianSignature: <input type="text" name="parent_guardian" id="firma">
           <br>
-          Date: <input type="date" name="date" id="firma">
+          Date: <input type="date" name="date" id="fecha">
         </fieldset>
         <button type="submit">Send</button>
       </form>
 
     </div>
 
-    <div class="div-form-img">
-      <img id="form-logo" src="./imagenes/from.png" alt="">
-
-    </div>
+    
 
   </main>
   <footer>

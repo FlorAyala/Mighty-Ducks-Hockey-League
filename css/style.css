@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -15,37 +16,32 @@ header {
     background-image: url(../imagenes/f9dad37a-f810-4d9e-a854-00dad397070d.jpg);
     background-position: left center;
     overflow: hidden;
-    height: 380px;
-
-
+    height: 316px;
+}
+main{
+    flex-grow: 2;
+    flex-direction: column;
 }
 
 .donde-estoy {
     color: black;
     text-align: center;
     font-size: 38px;
-    position: relative;
-    top: -62px;
-
-
+    margin-top: 21px;
 }
 
 /*  INICIO NAVEGADOR */
 
 .navegador {
-
     display: flex;
-
     flex-direction: column;
     align-items: center;
     background-color: black;
     height: 77px;
     opacity: 0.8;
-
-    bottom: 77px;
+    position: absolute;
     width: 100%;
-
-    position: relative;
+    
 
 }
 
@@ -71,39 +67,26 @@ header {
 a {
     text-decoration: none;
     color: white;
-
-
 }
 
 /*  FIN NAVEGADOR */
 
 
 
-/*solo se usa en about/contact*/
-.columna-2 {
-    right: 3px;
-    margin-top: 137px;
-    margin-left: 132px;
-    position: relative;
-    bottom: 141px;
-
-}
 
 /*FOOTER*/
 
 
 footer {
     background: #333;
-    ;
     color: white;
     text-transform: uppercase;
     padding: 41px 15%;
-    width: 70%;
+    width: 100vw;
     margin: 0;
     font-size: 12px;
     line-height: 1.5em;
     display: flex;
-
 }
 
 footer div {
@@ -145,7 +128,6 @@ footer div h3 {
 
 form button {
     background: transparent;
-
     border-radius: 6px;
     padding: 10px 30px;
     font-size: 15px;
@@ -174,9 +156,11 @@ form button {
 /*INICIO LOGO*/
 
 .div-logo {
-    position: absolute;
-    bottom: 435px;
-    left: 50px;
+   display: flex;
+   align-items: center;
+   margin-top: 45px;
+   margin-left: 58px;
+   margin-bottom: 20px;
 }
 
 #logo {
@@ -196,12 +180,7 @@ form button {
 
 
 /* INICIO DEL INDEX*/
-#style-index {
-    position: relative;
-    bottom: 455px;
-    right: 366px;
 
-}
 
 .div-welcome {
     background-color: black;
@@ -221,6 +200,9 @@ form button {
     display: none;
 }
 
+.contenedor-index{
+    
+}
 
 
 /*STYLE FOTO CON TEXTO*/
@@ -360,7 +342,7 @@ form button {
     text-align: center;
     left: 528px;
     right: 45px;
-    top: -44px;
+    top: 12px;
     z-index: 2;
     -webkit-animation: pulse-delay 8.5s linear 0.5s infinite alternate;
     animation: pulse-delay 8.5s linear 0.5s infinite alternate;
@@ -591,9 +573,6 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
-    right: 4px;
-
 }
 
 
@@ -622,8 +601,6 @@ table {
 
 #foto-schedule {
     width: 281px;
-    position: relative;
-    top: 50px;
     border-radius: 6px;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 
@@ -878,11 +855,7 @@ legend {
     width: 267px;
 }
 
-.div-form-img {
-    position: relative;
-    bottom: 1142px;
-    left: 937px;
-}
+
 
 .form-position,
 .form-ropa {
@@ -892,7 +865,7 @@ legend {
 
 }
 
-.position,
+.position-1,
 .ropa-1 {
     padding-right: 50px;
 }
@@ -969,9 +942,7 @@ legend {
         left: 374px; */
     }
 
-    .donde-estoy {
-        top: -11px;
-    }
+   
 
     .contenedor-index {
         display: flex;
@@ -1144,4 +1115,35 @@ legend {
 }
 
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+
+    header{
+        height: 182px; 
+        width: 125vw; 
+    }
+    main{
+        height: 90%;
+    }
+    .navegador{
+
+        width: 109px;
+        height: 127%;
+    }
+    .li-item {
+        font-size: 12px;
+        padding: 21px;
+    }
+    .contenedor-index{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*FOOTER*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 113%;
+    }
+    
+}
